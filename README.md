@@ -14,6 +14,10 @@
 * Output Activation Sigmoid
 * LayerNorms are not used during training. This architecture seems really inefficient and we will tweak it to make it more efficient
 
+## Inference
+* We take a zero vector of size (B,784)
+* We autoregressively generate one pixel at a time (i+1th pixel is generated at ith run)
+* Doing this proccess for 783 times generates the required image
 
 ## Psuedocode(Training)
 * Take an image(MNIST)
