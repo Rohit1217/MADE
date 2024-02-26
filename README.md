@@ -34,6 +34,7 @@
  ![Samples](sample.jpeg)
  
 ## Future changes/work
+* Cleaning the code to make it more readable and efficieent
 * Trying softmax by quantization of pixel
 * Scaling the method to generate color image (We have done it on GPT)
 * Using regularization methods such as batchnorm, dropout and observing the results.
