@@ -1,18 +1,18 @@
 # MADE
 
-*The following is an implementation based on the paper "Masked AutoEncoders for Density estimation"
+* The following is an implementation based on the paper "Masked AutoEncoders for Density estimation"
 
-We have done many experiments to get the thing working, only the final details are included in this file
+* We have done many experiments to get the thing working, only the final details are included in this file
 
 ## Training Datset
-Only MNIST Dataset was used to test due to compute constraint. We have not reported log probabilities, it is a future work on test dataset
+* Only MNIST Dataset was used to test due to compute constraint. We have not reported log probabilities, it is a future work on test dataset
 
 ## Architecture Details
-*5 layers ( Each has 784 neurons)
-*One single value is outputted
-*Activation function used ReLU
-*Output Activation Sigmoid
-*LayerNorms are not used during training. This architecture seems really inefficient and we will tweak it to make it more efficient
+* 5 layers ( Each has 784 neurons)
+* One single value is outputted
+* Activation function used ReLU
+* Output Activation Sigmoid
+* LayerNorms are not used during training. This architecture seems really inefficient and we will tweak it to make it more efficient
 
 
 ## Psuedocode(Training)
@@ -31,7 +31,8 @@ Only MNIST Dataset was used to test due to compute constraint. We have not repor
 * The masking is done in the raster scan order 
 
 ## Samples Generated
-
+ ![Samples](sample.jpeg)
+ 
 ## Future changes/work
 * Trying softmax by quantization of pixel
 * Scaling the method to generate color image (We have done it on GPT)
